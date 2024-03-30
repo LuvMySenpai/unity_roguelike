@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
 /// Replacement for the WeaponBehaviour class
+/// </summary>
 
-public abstract class Weapon : MonoBehaviour
+public abstract class Weapon : Item
 {
     [System.Serializable]
     public struct Stats
@@ -12,10 +14,11 @@ public abstract class Weapon : MonoBehaviour
         public string name, description;
 
         [Header("Visuals")]
-        //public Projectile projectilePrefab; // If attached, a projectile will spawn every time the weapon cools down.
-        //public Aura auraPrefab; // If attached, an aura will spawn when weapon is equipped.
+        public Projectile projectilePrefab; // If attached, a projectile will spawn every time the weapon cools down.
+        public Aura auraPrefab; // If attached, an aura will spawn when weapon is equipped.
         public ParticleSystem hitEffect;
         public Rect spawnVariance;
+        public AudioClip attackSound;
 
         [Header("Values")]
         public float lifespan; // If 0, it will last forever.
@@ -29,10 +32,11 @@ public abstract class Weapon : MonoBehaviour
             Stats result = new Stats();
             result.name = s2.name ?? s1.name;
             result.description = s2.description ?? s1.description;
-            //result.projectilePrefab = s2.projectilePrefab ?? s1.projectilePrefab;
-            //result.auraPrefab = s2.auraPrefab ?? s1.auraPrefab;
+            result.projectilePrefab = s2.projectilePrefab ?? s1.projectilePrefab;
+            result.auraPrefab = s2.auraPrefab ?? s1.auraPrefab;
             result.hitEffect = s2.hitEffect == null ? s1.hitEffect : s2.hitEffect;
             result.spawnVariance = s2.spawnVariance;
+            result.attackSound = s2.attackSound == null ? s1.attackSound : s2.attackSound;
             result.lifespan = s1.lifespan + s2.lifespan;
             result.damage = s1.damage + s2.damage;
             result.damageVariance = s1.damageVariance + s2.damageVariance;
@@ -53,23 +57,20 @@ public abstract class Weapon : MonoBehaviour
         }
     }
 
-    public int currentLevel = 1, maxLevel = 1;
-
-    protected PlayerStats owner;
-
     protected Stats currentStats;
 
     public WeaponData data;
 
     protected float currentCooldown;
 
+    protected AudioSource attackSource;
+
     protected NewBehaviourScript movement; // Reference to the player's movement.
 
     // For dynamically created weapons, call initialise to set everything up.
     public virtual void Initialise(WeaponData data)
     {
-        maxLevel = data.maxLevel;
-        owner = FindObjectOfType<PlayerStats>();
+        base.Initialise(data);
 
         this.data = data;
         currentStats = data.baseStats;
@@ -90,6 +91,8 @@ public abstract class Weapon : MonoBehaviour
         {
             Initialise(data);
         }
+
+        attackSource = GameObject.FindWithTag("Player").GetComponent<AudioSource>();
     }
 
     protected virtual void Update()
@@ -101,14 +104,10 @@ public abstract class Weapon : MonoBehaviour
         }
     }
 
-    public virtual bool CanLevelUp()
-    {
-        return currentLevel <= maxLevel;
-    }
-
     // Levels up the weapon by 1, and calculates the corresponding stats.
-    public virtual bool DoLevelUp()
+    public override bool DoLevelUp()
     {
+        base.DoLevelUp();
 
         // Prevent level up if we are already at max level.
         if (!CanLevelUp())
@@ -136,6 +135,7 @@ public abstract class Weapon : MonoBehaviour
         if (CanAttack())
         {
             currentCooldown += currentStats.cooldown;
+
             return true;
         }
         return false;

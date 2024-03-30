@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abbab854feaf6474f844400a61f63dea, type: 3}
+  m_Name: Beating Heart
+  m_EditorClassIdentifier: 
+  icon: {fileID: 706327917, guid: d5b2dfc36e5bea3438a71a5cc29a5ca3, type: 3}
+  maxLevel: 5
+  evolutionData: []
+  baseStats:
+    name: "\u0411\u044C\u044E\u0449\u0435\u0435\u0441\u044F \u0441\u0435\u0440\u0434\u0446\u0435"
+    description: "\u0423\u0441\u0438\u043B\u0435\u043D\u0438\u0435 \u0440\u0435\u0433\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u0438"
+    boosts:
+      maxHealth: 0
+      recovery: 0.2
+      moveSpeed: 0
+      might: 0
+      speed: 0
+      magnet: 0
+  growth:
+  - name: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 2"
+    description: "+ 0.2 \u041E\u0417. \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+    boosts:
+      maxHealth: 0
+      recovery: 0.2
+      moveSpeed: 0
+      might: 0
+      speed: 0
+      magnet: 0
+  - name: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 3"
+    description: "+ 0.2 \u041E\u0417. \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+    boosts:
+      maxHealth: 0
+      recovery: 0.2
+      moveSpeed: 0
+      might: 0
+      speed: 0
+      magnet: 0
+  - name: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 4"
+    description: "+ 0.2 \u041E\u0417. \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+    boosts:
+      maxHealth: 0
+      recovery: 0.2
+      moveSpeed: 0
+      might: 0
+      speed: 0
+      magnet: 0
+  - name: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 5"
+    description: "+ 0.2 \u041E\u0417. \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+    boosts:
+      maxHealth: 0
+      recovery: 0.2
+      moveSpeed: 0
+      might: 0
+      speed: 0
+      magnet: 0

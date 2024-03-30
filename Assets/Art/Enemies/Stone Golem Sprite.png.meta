@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: 7c27795fab6f6c140b8b70e86e49790b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Stone Golem Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 930
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a94c87c54482ab4b9a9c34b4b986f54
+      internalID: 1318102760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Golem Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 931
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38885742b83ed524daceb8b4dfa3d801
+      internalID: -1209471382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Golem Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 930
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91caadc7314dace498d8ac345d562502
+      internalID: 1530662383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Golem Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 930
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3542deb488146f4795d7dfe3358319b
+      internalID: -966822683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Stone Golem Sprite_0: 1318102760
+      Stone Golem Sprite_1: -1209471382
+      Stone Golem Sprite_10: 1858162319
+      Stone Golem Sprite_11: 741633448
+      Stone Golem Sprite_12: -1045063363
+      Stone Golem Sprite_13: 833625267
+      Stone Golem Sprite_14: 1412124415
+      Stone Golem Sprite_15: -979093377
+      Stone Golem Sprite_16: -497336896
+      Stone Golem Sprite_17: 261349948
+      Stone Golem Sprite_18: -1341346505
+      Stone Golem Sprite_19: -651680746
+      Stone Golem Sprite_2: 1530662383
+      Stone Golem Sprite_20: -313691593
+      Stone Golem Sprite_21: -1971257130
+      Stone Golem Sprite_22: 1469600309
+      Stone Golem Sprite_23: -1906811543
+      Stone Golem Sprite_24: 24958416
+      Stone Golem Sprite_25: -1600908517
+      Stone Golem Sprite_26: 1997357901
+      Stone Golem Sprite_27: 288845697
+      Stone Golem Sprite_28: 1692472331
+      Stone Golem Sprite_29: 1935207870
+      Stone Golem Sprite_3: -966822683
+      Stone Golem Sprite_30: -739090343
+      Stone Golem Sprite_31: -975585714
+      Stone Golem Sprite_32: 759925285
+      Stone Golem Sprite_33: -1572568467
+      Stone Golem Sprite_34: 774008686
+      Stone Golem Sprite_35: -1929833450
+      Stone Golem Sprite_36: 194712948
+      Stone Golem Sprite_37: 266373805
+      Stone Golem Sprite_38: -1629631785
+      Stone Golem Sprite_39: -55515589
+      Stone Golem Sprite_4: -57398051
+      Stone Golem Sprite_40: -1381442085
+      Stone Golem Sprite_41: 1251414582
+      Stone Golem Sprite_42: 2060726816
+      Stone Golem Sprite_43: 1009983289
+      Stone Golem Sprite_44: -1293860904
+      Stone Golem Sprite_45: -1826141327
+      Stone Golem Sprite_46: 1237376614
+      Stone Golem Sprite_47: -1953005586
+      Stone Golem Sprite_48: 2121553572
+      Stone Golem Sprite_49: -823569786
+      Stone Golem Sprite_5: 1014699763
+      Stone Golem Sprite_50: 1024404990
+      Stone Golem Sprite_51: -2106138339
+      Stone Golem Sprite_52: 1010276796
+      Stone Golem Sprite_53: 1200689448
+      Stone Golem Sprite_54: -2075197412
+      Stone Golem Sprite_55: 1014719809
+      Stone Golem Sprite_56: -585748131
+      Stone Golem Sprite_57: 1592824879
+      Stone Golem Sprite_58: -2044682779
+      Stone Golem Sprite_59: -1569279570
+      Stone Golem Sprite_6: -1140327909
+      Stone Golem Sprite_60: -2000834932
+      Stone Golem Sprite_61: 264011954
+      Stone Golem Sprite_62: 1360276090
+      Stone Golem Sprite_63: 1108127542
+      Stone Golem Sprite_64: -795983963
+      Stone Golem Sprite_65: 594329125
+      Stone Golem Sprite_66: -1520322486
+      Stone Golem Sprite_67: -931687903
+      Stone Golem Sprite_68: -612683342
+      Stone Golem Sprite_69: 511983614
+      Stone Golem Sprite_7: 141722600
+      Stone Golem Sprite_70: 333849036
+      Stone Golem Sprite_71: -325982511
+      Stone Golem Sprite_72: -196802011
+      Stone Golem Sprite_8: 48624900
+      Stone Golem Sprite_9: 1743206092
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

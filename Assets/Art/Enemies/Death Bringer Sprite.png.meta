@@ -1,0 +1,421 @@
+fileFormatVersion: 2
+guid: 4c35105d9ae4e9a4f9d8efdddacdeb4a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Death Bringer Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 559
+        width: 50
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68669f09e1635bb498cb8d27bc3c92dc
+      internalID: -273699826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death Bringer Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 559
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c56404520dd30145b1127cd27c53787
+      internalID: 1637397570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death Bringer Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 559
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd21b1491015044992c140c4c375373
+      internalID: 987366889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death Bringer Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 559
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84cc3ba5fac9783449c5c2066d5e6cc1
+      internalID: 1584556629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death Bringer Sprite_12
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 559
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691dd6f0d66ac0f4aa236d6e7b8adef1
+      internalID: -391691666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death Bringer Sprite_13
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 559
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d577b45bc55d54da84368d7c477a16
+      internalID: 1425107548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death Bringer Sprite_14
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 559
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63e32850b9270049aa6a21b0f4bcdba
+      internalID: -121594558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death Bringer Sprite_15
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 559
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e644e822c5a1d640a9cadc740cd1026
+      internalID: -1638225706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Death Bringer Sprite_0: 1613763317
+      Death Bringer Sprite_1: -1814141911
+      Death Bringer Sprite_10: 987366889
+      Death Bringer Sprite_100: -681746821
+      Death Bringer Sprite_101: -1947242276
+      Death Bringer Sprite_102: -1241896431
+      Death Bringer Sprite_103: -75269334
+      Death Bringer Sprite_104: -1342902588
+      Death Bringer Sprite_105: -1319639625
+      Death Bringer Sprite_106: -1860407909
+      Death Bringer Sprite_107: -1366509586
+      Death Bringer Sprite_108: -658908410
+      Death Bringer Sprite_109: 344379116
+      Death Bringer Sprite_11: 1584556629
+      Death Bringer Sprite_110: 1394113173
+      Death Bringer Sprite_111: 1764759627
+      Death Bringer Sprite_112: -1502952096
+      Death Bringer Sprite_12: -391691666
+      Death Bringer Sprite_13: 1425107548
+      Death Bringer Sprite_14: -121594558
+      Death Bringer Sprite_15: -1638225706
+      Death Bringer Sprite_16: -197008570
+      Death Bringer Sprite_17: 1439525906
+      Death Bringer Sprite_18: -1893177947
+      Death Bringer Sprite_19: -162820902
+      Death Bringer Sprite_2: -57965036
+      Death Bringer Sprite_20: -298038997
+      Death Bringer Sprite_21: 780187838
+      Death Bringer Sprite_22: -1054388494
+      Death Bringer Sprite_23: -1933552376
+      Death Bringer Sprite_24: -48562157
+      Death Bringer Sprite_25: -2143881809
+      Death Bringer Sprite_26: -168504591
+      Death Bringer Sprite_27: 905670345
+      Death Bringer Sprite_28: 1798708217
+      Death Bringer Sprite_29: 1233591357
+      Death Bringer Sprite_3: 215163549
+      Death Bringer Sprite_30: -848501965
+      Death Bringer Sprite_31: -1041627855
+      Death Bringer Sprite_32: 1007244949
+      Death Bringer Sprite_33: -879738481
+      Death Bringer Sprite_34: -1226590057
+      Death Bringer Sprite_35: -1709688325
+      Death Bringer Sprite_36: 2061236639
+      Death Bringer Sprite_37: 276095946
+      Death Bringer Sprite_38: -1775944800
+      Death Bringer Sprite_39: 101352482
+      Death Bringer Sprite_4: -1550730782
+      Death Bringer Sprite_40: 957417254
+      Death Bringer Sprite_41: -157114286
+      Death Bringer Sprite_42: -13524111
+      Death Bringer Sprite_43: -1076207922
+      Death Bringer Sprite_44: -586428654
+      Death Bringer Sprite_45: -196624318
+      Death Bringer Sprite_46: 1626614509
+      Death Bringer Sprite_47: 1076737870
+      Death Bringer Sprite_48: -1006140241
+      Death Bringer Sprite_49: 791318458
+      Death Bringer Sprite_5: -452937414
+      Death Bringer Sprite_50: -1844765129
+      Death Bringer Sprite_51: -1920173542
+      Death Bringer Sprite_52: -1502212075
+      Death Bringer Sprite_53: -1133309153
+      Death Bringer Sprite_54: -1466527712
+      Death Bringer Sprite_55: 2117780435
+      Death Bringer Sprite_56: -1282807051
+      Death Bringer Sprite_57: -1772592038
+      Death Bringer Sprite_58: 1990829267
+      Death Bringer Sprite_59: -97878564
+      Death Bringer Sprite_6: 993240327
+      Death Bringer Sprite_60: -1304934833
+      Death Bringer Sprite_61: 1955481931
+      Death Bringer Sprite_62: 2122364643
+      Death Bringer Sprite_63: 2073255249
+      Death Bringer Sprite_64: 1141898908
+      Death Bringer Sprite_65: 437666311
+      Death Bringer Sprite_66: 393348527
+      Death Bringer Sprite_67: 31091471
+      Death Bringer Sprite_68: 1458406451
+      Death Bringer Sprite_69: 923793228
+      Death Bringer Sprite_7: -1171066696
+      Death Bringer Sprite_70: -679061447
+      Death Bringer Sprite_71: 1933797783
+      Death Bringer Sprite_72: 881778299
+      Death Bringer Sprite_73: 875394741
+      Death Bringer Sprite_74: -1026425064
+      Death Bringer Sprite_75: 422864433
+      Death Bringer Sprite_76: -2130400041
+      Death Bringer Sprite_77: -391089944
+      Death Bringer Sprite_78: -2133280206
+      Death Bringer Sprite_79: -1724745026
+      Death Bringer Sprite_8: -273699826
+      Death Bringer Sprite_80: -618151044
+      Death Bringer Sprite_81: 1692386157
+      Death Bringer Sprite_82: 769388263
+      Death Bringer Sprite_83: -394699039
+      Death Bringer Sprite_84: 542350683
+      Death Bringer Sprite_85: 1029298590
+      Death Bringer Sprite_86: 1320446684
+      Death Bringer Sprite_87: -1651185296
+      Death Bringer Sprite_88: -1981107055
+      Death Bringer Sprite_89: 166977420
+      Death Bringer Sprite_9: 1637397570
+      Death Bringer Sprite_90: 61658716
+      Death Bringer Sprite_91: 1677071280
+      Death Bringer Sprite_92: -1378936797
+      Death Bringer Sprite_93: 1099082442
+      Death Bringer Sprite_94: 661519787
+      Death Bringer Sprite_95: 1623276726
+      Death Bringer Sprite_96: 1080800649
+      Death Bringer Sprite_97: 1651596810
+      Death Bringer Sprite_98: -1921374125
+      Death Bringer Sprite_99: -360450414
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

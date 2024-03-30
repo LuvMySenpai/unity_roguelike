@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8117d53128c511408090b35318bdaea, type: 3}
+  m_Name: Salt Weapon Level 3
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 6258893291107715262, guid: 5f841f9e8a880184492e870909b6b209, type: 3}
+  damage: 7
+  speed: 0
+  cooldownDuration: 2.5
+  pierce: 0
+  level: 2
+  nextLevelPrefab: {fileID: 0}
+  name: Salt Level 3
+  description: Damage up by 2
+  icon: {fileID: -587660162, guid: ad438dd7dd4f7204cb7b3501e8531ac6, type: 3}

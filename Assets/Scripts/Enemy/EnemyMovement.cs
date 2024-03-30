@@ -29,6 +29,11 @@ public class EnemyMovement : MonoBehaviour
         {
             //Otherwise, move enemy towards the player
 			transform.position = Vector2.MoveTowards(transform.position, player.transform.position, enemy.currentMoveSpeed * Time.deltaTime);
+
+            if (player.transform.position.x < transform.position.x)
+                enemy.FlipSprite(true);
+            else
+                enemy.FlipSprite(false);
 		}
     }
 

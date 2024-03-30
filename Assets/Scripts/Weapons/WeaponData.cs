@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
 /// Replacement for the WeaponScriptableObject class
+/// </summary>
 
 [CreateAssetMenu(fileName = "Weapon Data", menuName = "ScriptableObjects/Weapon Data")]
-public class WeaponData : ScriptableObject
+public class WeaponData : ItemData
 {
-    public Sprite icon;
-    public int maxLevel;
-
     [HideInInspector] public string behaviour;
     public Weapon.Stats baseStats;
     public Weapon.Stats[] linearGrowth;

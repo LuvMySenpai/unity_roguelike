@@ -1,40 +1,40 @@
+using Unity.VisualScripting;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
+[RequireComponent(typeof(CircleCollider2D))]
 public class PlayerCollector : MonoBehaviour
 {
     PlayerStats player;
-    CircleCollider2D playerCollector;
-    //Object grabbing speed
+    CircleCollider2D detector;
     public float pullSpeed;
 
-    void Start()
+    [SerializeField]
+    public AudioClip pickupSound;
+
+    [SerializeField]
+    AudioSource audioSource;
+
+    private void Start()
     {
-        player = FindObjectOfType<PlayerStats>();    
-        playerCollector = GetComponent<CircleCollider2D>();
+        player = GetComponentInParent<PlayerStats>();
     }
 
-    void Update()
+    public void SetRadius(float r)
     {
-        //Set collect radius
-        playerCollector.radius = player.CurrentMagnet;    
+        if (!detector) detector = GetComponent<CircleCollider2D>();
+        detector.radius = r;
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.TryGetComponent(out ICollectable collectable))
+        //Check if the other GameObject is a Pickup.
+        if (col.TryGetComponent(out Pickup p))
         {
-            //Object grabbing animation
-            //Get Rigidbody of an item
-            Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
-            //Get direction from item to player
-            Vector2 forceDirection = (transform.position - col.transform.position).normalized;
-            //simulates force??? idk
-            rb.AddForce(forceDirection * pullSpeed);
-
-            collectable.Collect();
+            audioSource.PlayOneShot(pickupSound);
+            p.Collect(player, pullSpeed);
         }
     }
+
 }

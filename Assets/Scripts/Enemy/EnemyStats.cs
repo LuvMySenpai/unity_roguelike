@@ -16,6 +16,12 @@ public class EnemyStats : MonoBehaviour
     public float currentDamage;
 
     public float despawnDistance = 20f;
+
+    [SerializeField]
+    public AudioClip damageSound;
+
+    AudioSource audioSource;
+
     Transform player;
 
     [Header("Damage Feedback")]
@@ -31,6 +37,7 @@ public class EnemyStats : MonoBehaviour
         currentMoveSpeed = enemyData.MoveSpeed;
         currentHealth = enemyData.MaxHealth;
         currentDamage = enemyData.Damage;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -52,6 +59,8 @@ public class EnemyStats : MonoBehaviour
 
     public void TakeDamage(float dmg, Vector2 sourcePosition, float knockbackForce = 5f, float knockbackduration = 0.2f)
     {
+        audioSource.PlayOneShot(damageSound);
+
         currentHealth -= dmg;
         StartCoroutine(DamageFlash());
 
@@ -122,5 +131,13 @@ public class EnemyStats : MonoBehaviour
     {
         EnemySpawner es = FindObjectOfType<EnemySpawner>();
         transform.position = player.position + es.relativeSpawnPoints[Random.Range(0, es.relativeSpawnPoints.Count)].position;
+    }
+
+    public void FlipSprite(bool isFlipped)
+    {
+        if (isFlipped)
+            sr.flipX = true;
+        else
+            sr.flipX = false;
     }
 }

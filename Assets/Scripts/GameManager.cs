@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text chosenCharacterName;
     public TMP_Text levelReachedDisplay;
     public TMP_Text timeSurvivedDisplay;
+    public TMP_Text goldEarnedDisplay;
     public List<Image> chosenWeaponsUI = new List<Image>(6);
     public List<Image> chosenPassiveItemsUI = new List<Image>(6);
 
@@ -49,6 +50,7 @@ public class GameManager : MonoBehaviour
     float stopwatchTime;
     public TMP_Text stopwatchDisplay;
 
+    int goldEarned;
 
     //Flag to check if the game is over
     public bool isGameOver = false;
@@ -72,7 +74,14 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        DisableScreens();    
+        DisableScreens();
+
+        GameObject menuMusic = GameObject.FindGameObjectWithTag("MenuMusic");
+
+        if (menuMusic)
+        {
+            Destroy(menuMusic);
+        }
     }
 
     void Update()
@@ -168,6 +177,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         timeSurvivedDisplay.text = stopwatchDisplay.text;
+        AssignEarnedGoldUI();
         ChangeState(GameState.GameOver);
     }
 
@@ -176,7 +186,14 @@ public class GameManager : MonoBehaviour
         resultsScreen.SetActive(true);
     }
 
-    public void AssignChosenCharacterUI(CharacterScriptableObject chosenCharacterData)
+    public void AssignEarnedGoldUI()
+    {
+        goldEarned = (int)(stopwatchTime * 0.3);
+        goldEarnedDisplay.text = goldEarned.ToString();
+        XMLManager.instance.SaveGoldAmount(goldEarned);
+    }
+
+    public void AssignChosenCharacterUI(CharacterData chosenCharacterData)
     {
         chosenCharacterImage.sprite = chosenCharacterData.Icon;
         chosenCharacterName.text = chosenCharacterData.Name;
@@ -187,7 +204,7 @@ public class GameManager : MonoBehaviour
         levelReachedDisplay.text = levelReachedData.ToString();
     }
 
-    public void AssignChosenWeaponsAndPassiveItemsUI(List<Image> chosenWeaponsData, List<Image> chosenPassiveItemsData)
+    public void AssignChosenWeaponsAndPassiveItemsUI(List<PlayerInventory.Slot> chosenWeaponsData, List<PlayerInventory.Slot> chosenPassiveItemsData)
     {
         if(chosenWeaponsData.Count != chosenWeaponsUI.Count || chosenPassiveItemsData.Count != chosenPassiveItemsUI.Count)
         {
@@ -199,11 +216,11 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < chosenWeaponsUI.Count; i++)
         {
             //Check for null exception
-            if (chosenWeaponsData[i].sprite)
+            if (chosenWeaponsData[i].image.sprite)
             {
                 //Enable element
                 chosenWeaponsUI[i].enabled = true;
-                chosenWeaponsUI[i].sprite = chosenWeaponsData[i].sprite;
+                chosenWeaponsUI[i].sprite = chosenWeaponsData[i].image.sprite;
             }
             else
             {
@@ -215,11 +232,11 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < chosenPassiveItemsUI.Count; i++)
         {
             //Check for null exception
-            if (chosenPassiveItemsData[i].sprite)
+            if (chosenPassiveItemsData[i].image.sprite)
             {
                 //Enable element
                 chosenPassiveItemsUI[i].enabled = true;
-                chosenPassiveItemsUI[i].sprite = chosenPassiveItemsData[i].sprite;
+                chosenPassiveItemsUI[i].sprite = chosenPassiveItemsData[i].image.sprite;
             }
             else
             {
