@@ -11,6 +11,7 @@ public class XMLManager : MonoBehaviour
     public static XMLManager instance;
     public Gold gold;
     public Souls souls;
+    public Profiles profiles;
 
     void Awake()
     {
@@ -24,23 +25,23 @@ public class XMLManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if(!Directory.Exists(Application.persistentDataPath + "/GoldAmount/"))
+        if (!Directory.Exists(Application.persistentDataPath + "/GoldAmount/"))
         {
             Directory.CreateDirectory(Application.persistentDataPath + "/GoldAmount/");
         }
 
-        if(!Directory.Exists(Application.persistentDataPath + "/Souls/"))
+        if (!Directory.Exists(Application.persistentDataPath + "/Souls/"))
         {
             Directory.CreateDirectory(Application.persistentDataPath + "/Souls/");
 
             List<SoulTemplate> tempCards = new List<SoulTemplate>()
             {
-                new SoulTemplate(0, "Второй", false, 2),
-                new SoulTemplate(1, "Третий", false, 3),
-                new SoulTemplate(2, "Четвёртый", false, 4),
-                new SoulTemplate(3, "Пятый", false, 5),
-                new SoulTemplate(4, "Шестой", false, 6),
-                new SoulTemplate(5, "Седьмой", false, 7),
+                new SoulTemplate(0, "Knight", false, 100),
+                new SoulTemplate(1, "Guard", false, 150),
+                new SoulTemplate(2, "Wizard", false, 200),
+                new SoulTemplate(3, "Hunter", false, 250),
+                new SoulTemplate(4, "Pyromancer", false, 300),
+                new SoulTemplate(5, "Electromancer", false, 350),
             };
 
             souls.soulCards = tempCards;
@@ -49,6 +50,11 @@ public class XMLManager : MonoBehaviour
             FileStream stream = new FileStream(Application.persistentDataPath + "/Souls/soulCards.xml", FileMode.Create);
             serializer.Serialize(stream, souls);
             stream.Close();
+        }
+
+        if (!Directory.Exists(Application.persistentDataPath + "/Profiles/"))
+        {
+            Directory.CreateDirectory(Application.persistentDataPath + "/Profiles/");
         }
     }
 
@@ -62,7 +68,14 @@ public class XMLManager : MonoBehaviour
     public class Souls
     {
         public List<SoulTemplate> soulCards = new List<SoulTemplate>(6);
+    }
 
+    [System.Serializable]
+    public class Profiles
+    {
+        public string currentUser;
+
+        public List<ProfileTemplate> profilesList = new List<ProfileTemplate>(3);
     }
 
     public class SoulTemplate
@@ -85,11 +98,47 @@ public class XMLManager : MonoBehaviour
         }
     }
 
+    public class ProfileTemplate
+    {
+        public string Username;
+        public int goldAmount;
+        public List<SoulTemplate> soulCards = new List<SoulTemplate>(6);
+    }
+
+    public void AddProfile(string username)
+    {
+        List<SoulTemplate> tempCards = new List<SoulTemplate>()
+        {
+            new SoulTemplate(0, "Knight", false, 100),
+            new SoulTemplate(1, "Guard", false, 150),
+            new SoulTemplate(2, "Wizard", false, 200),
+            new SoulTemplate(3, "Hunter", false, 250),
+            new SoulTemplate(4, "Pyromancer", false, 300),
+            new SoulTemplate(5, "Electromancer", false, 350),
+        };
+
+        ProfileTemplate newProfile = new ProfileTemplate()
+        {
+            Username = username,
+            goldAmount = 0,
+            soulCards = tempCards,
+        };
+
+
+        profiles.currentUser = username;
+        profiles.profilesList.Add(newProfile);
+    }
+
     public void RemoveGold(int gldAmount)
     {
         gold.goldAmount -= gldAmount;
         SaveGoldAmount(0);
     }
+
+    //public void SaveProfile()
+    //{
+
+    //}
 
     public void SaveGoldAmount(int gldAmount)
     {
@@ -102,7 +151,7 @@ public class XMLManager : MonoBehaviour
 
     public int LoadGoldAmount()
     {
-        if(File.Exists(Application.persistentDataPath + "/GoldAmount/goldAmount.xml"))
+        if (File.Exists(Application.persistentDataPath + "/GoldAmount/goldAmount.xml"))
         {
             XmlSerializer serializer = new XmlSerializer(typeof(Gold));
             FileStream stream = new FileStream(Application.persistentDataPath + "/GoldAmount/goldAmount.xml", FileMode.Open);

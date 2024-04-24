@@ -1039,6 +1039,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &331716073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 331716074}
+  m_Layer: 0
+  m_Name: Spawn Point 16
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &331716074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331716073}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.85, y: 2.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 758125877}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &334475061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,7 +1607,7 @@ Transform:
   m_GameObject: {fileID: 402294390}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.49, y: -6, z: 0}
+  m_LocalPosition: {x: -0.16, y: -6.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2095,7 +2126,7 @@ Transform:
   m_GameObject: {fileID: 477851871}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.44, y: 1.49, z: 0}
+  m_LocalPosition: {x: 10.99, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2789,7 +2820,7 @@ Transform:
   m_GameObject: {fileID: 577065278}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.51, y: 1.53, z: 0}
+  m_LocalPosition: {x: -11.21, y: 2.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2929,6 +2960,37 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &590225848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 590225849}
+  m_Layer: 0
+  m_Name: Spawn Point 13
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &590225849
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590225848}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.03, y: 5.78, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 758125877}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &621762472
 GameObject:
   m_ObjectHideFlags: 0
@@ -3222,7 +3284,7 @@ Transform:
   m_GameObject: {fileID: 672493173}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.43, y: -4.65, z: 0}
+  m_LocalPosition: {x: -10.43, y: -5.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3901,6 +3963,10 @@ Transform:
   - {fileID: 925495452}
   - {fileID: 477851872}
   - {fileID: 1717698942}
+  - {fileID: 590225849}
+  - {fileID: 1963172105}
+  - {fileID: 1143426940}
+  - {fileID: 331716074}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &758125878
@@ -3937,11 +4003,11 @@ MonoBehaviour:
   - waveName: Wave 3
     enemyGroups:
     - enemyName: Bat
-      enemyCount: 200
+      enemyCount: 50
       spawnCount: 0
       enemyPrefab: {fileID: 3453514435061809102, guid: 82ea2483b83e7f544891b5fc1e10f3be, type: 3}
     - enemyName: Stump
-      enemyCount: 100
+      enemyCount: 75
       spawnCount: 0
       enemyPrefab: {fileID: 1205390268951531452, guid: 7142a739afa9d3545899b73a950ba924, type: 3}
     waveQuota: 0
@@ -3950,15 +4016,15 @@ MonoBehaviour:
   - waveName: Wave 4
     enemyGroups:
     - enemyName: Bat
-      enemyCount: 50
+      enemyCount: 25
       spawnCount: 0
       enemyPrefab: {fileID: 3453514435061809102, guid: 82ea2483b83e7f544891b5fc1e10f3be, type: 3}
     - enemyName: Stump
-      enemyCount: 75
+      enemyCount: 25
       spawnCount: 0
       enemyPrefab: {fileID: 1205390268951531452, guid: 7142a739afa9d3545899b73a950ba924, type: 3}
     - enemyName: Flying Eye
-      enemyCount: 75
+      enemyCount: 50
       spawnCount: 0
       enemyPrefab: {fileID: 1303935746889765635, guid: f72d8b0c8719b2a4497a33b81f021c98, type: 3}
     waveQuota: 0
@@ -3967,11 +4033,11 @@ MonoBehaviour:
   - waveName: Wave 5
     enemyGroups:
     - enemyName: Flying Eye
-      enemyCount: 100
+      enemyCount: 50
       spawnCount: 0
       enemyPrefab: {fileID: 1303935746889765635, guid: f72d8b0c8719b2a4497a33b81f021c98, type: 3}
     - enemyName: Stump
-      enemyCount: 100
+      enemyCount: 50
       spawnCount: 0
       enemyPrefab: {fileID: 1205390268951531452, guid: 7142a739afa9d3545899b73a950ba924, type: 3}
     - enemyName: Skeleton Warrior
@@ -3988,36 +4054,32 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 1806543459694631044, guid: eb3be40b74048294d87ec2fffef34e7e, type: 3}
     - enemyName: Stump
-      enemyCount: 100
+      enemyCount: 25
       spawnCount: 0
       enemyPrefab: {fileID: 1205390268951531452, guid: 7142a739afa9d3545899b73a950ba924, type: 3}
     - enemyName: Skeleton Warrior
       enemyCount: 40
       spawnCount: 0
       enemyPrefab: {fileID: 1174951708663623431, guid: 65fc1c82a2296fa44a97960bf0a882f0, type: 3}
-    - enemyName: Bat
-      enemyCount: 75
-      spawnCount: 0
-      enemyPrefab: {fileID: 3453514435061809102, guid: 82ea2483b83e7f544891b5fc1e10f3be, type: 3}
     waveQuota: 0
     spawnInterval: 0.2
     spawnCount: 0
   - waveName: Wave 7
     enemyGroups:
     - enemyName: Goblin
-      enemyCount: 75
+      enemyCount: 50
       spawnCount: 0
       enemyPrefab: {fileID: 1806543459694631044, guid: eb3be40b74048294d87ec2fffef34e7e, type: 3}
     - enemyName: Stump
-      enemyCount: 150
+      enemyCount: 75
       spawnCount: 0
       enemyPrefab: {fileID: 1205390268951531452, guid: 7142a739afa9d3545899b73a950ba924, type: 3}
     - enemyName: Skeleton Warrior
-      enemyCount: 50
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 1174951708663623431, guid: 65fc1c82a2296fa44a97960bf0a882f0, type: 3}
     - enemyName: Sprout
-      enemyCount: 100
+      enemyCount: 50
       spawnCount: 0
       enemyPrefab: {fileID: 4162717417100259613, guid: f822ec52be53bd643a39beca2a2eb130, type: 3}
     waveQuota: 0
@@ -4026,7 +4088,7 @@ MonoBehaviour:
   - waveName: Wave 8
     enemyGroups:
     - enemyName: Goblin
-      enemyCount: 75
+      enemyCount: 25
       spawnCount: 0
       enemyPrefab: {fileID: 1806543459694631044, guid: eb3be40b74048294d87ec2fffef34e7e, type: 3}
     - enemyName: Demon
@@ -4038,11 +4100,11 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 1174951708663623431, guid: 65fc1c82a2296fa44a97960bf0a882f0, type: 3}
     - enemyName: Sprout
-      enemyCount: 100
+      enemyCount: 25
       spawnCount: 0
       enemyPrefab: {fileID: 4162717417100259613, guid: f822ec52be53bd643a39beca2a2eb130, type: 3}
     - enemyName: Flying Eye
-      enemyCount: 100
+      enemyCount: 50
       spawnCount: 0
       enemyPrefab: {fileID: 1303935746889765635, guid: f72d8b0c8719b2a4497a33b81f021c98, type: 3}
     - enemyName: Death Bringer
@@ -4055,19 +4117,19 @@ MonoBehaviour:
   - waveName: Wave 9
     enemyGroups:
     - enemyName: Demon
-      enemyCount: 100
+      enemyCount: 75
       spawnCount: 0
       enemyPrefab: {fileID: 7619784974671427562, guid: 78537a91328b8db49953c5f2721ba0ca, type: 3}
     - enemyName: Skeleton Warrior
-      enemyCount: 100
+      enemyCount: 50
       spawnCount: 0
       enemyPrefab: {fileID: 1174951708663623431, guid: 65fc1c82a2296fa44a97960bf0a882f0, type: 3}
     - enemyName: Sprout
-      enemyCount: 100
+      enemyCount: 25
       spawnCount: 0
       enemyPrefab: {fileID: 3453514435061809102, guid: 82ea2483b83e7f544891b5fc1e10f3be, type: 3}
     - enemyName: Flying Eye
-      enemyCount: 100
+      enemyCount: 50
       spawnCount: 0
       enemyPrefab: {fileID: 1303935746889765635, guid: f72d8b0c8719b2a4497a33b81f021c98, type: 3}
     waveQuota: 0
@@ -4088,15 +4150,180 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 1174951708663623431, guid: 65fc1c82a2296fa44a97960bf0a882f0, type: 3}
     - enemyName: Stump
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 1205390268951531452, guid: 7142a739afa9d3545899b73a950ba924, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.2
+    spawnCount: 0
+  - waveName: Wave 11
+    enemyGroups:
+    - enemyName: Skeleton Warrior
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 1174951708663623431, guid: 65fc1c82a2296fa44a97960bf0a882f0, type: 3}
+    - enemyName: Demon
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 7619784974671427562, guid: 78537a91328b8db49953c5f2721ba0ca, type: 3}
+    - enemyName: Goblin
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 1806543459694631044, guid: eb3be40b74048294d87ec2fffef34e7e, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.2
+    spawnCount: 0
+  - waveName: Wave 12
+    enemyGroups:
+    - enemyName: Sprout
+      enemyCount: 100
+      spawnCount: 0
+      enemyPrefab: {fileID: 4162717417100259613, guid: f822ec52be53bd643a39beca2a2eb130, type: 3}
+    - enemyName: Flying Eye
+      enemyCount: 100
+      spawnCount: 0
+      enemyPrefab: {fileID: 1303935746889765635, guid: f72d8b0c8719b2a4497a33b81f021c98, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.2
+    spawnCount: 0
+  - waveName: Wave 13
+    enemyGroups:
+    - enemyName: Flying Eye
+      enemyCount: 100
+      spawnCount: 0
+      enemyPrefab: {fileID: 1303935746889765635, guid: f72d8b0c8719b2a4497a33b81f021c98, type: 3}
+    - enemyName: Stump
       enemyCount: 100
       spawnCount: 0
       enemyPrefab: {fileID: 1205390268951531452, guid: 7142a739afa9d3545899b73a950ba924, type: 3}
     waveQuota: 0
     spawnInterval: 0.2
     spawnCount: 0
+  - waveName: Wave 14
+    enemyGroups:
+    - enemyName: Demon
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 7619784974671427562, guid: 78537a91328b8db49953c5f2721ba0ca, type: 3}
+    - enemyName: Death Bringer
+      enemyCount: 2
+      spawnCount: 0
+      enemyPrefab: {fileID: 6679005153774227431, guid: 3be871b1d6d6a3d4385f65802a2a0c2a, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.2
+    spawnCount: 0
+  - waveName: Wave 15
+    enemyGroups:
+    - enemyName: Stone Golem
+      enemyCount: 2
+      spawnCount: 0
+      enemyPrefab: {fileID: 2349134093270240024, guid: 4f5bee7b395f8674abbd59643fda7c0d, type: 3}
+    - enemyName: Death Bringer
+      enemyCount: 2
+      spawnCount: 0
+      enemyPrefab: {fileID: 6679005153774227431, guid: 3be871b1d6d6a3d4385f65802a2a0c2a, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.2
+    spawnCount: 0
+  - waveName: Wave 16
+    enemyGroups:
+    - enemyName: Goblin
+      enemyCount: 75
+      spawnCount: 0
+      enemyPrefab: {fileID: 1806543459694631044, guid: eb3be40b74048294d87ec2fffef34e7e, type: 3}
+    - enemyName: Sprout
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 4162717417100259613, guid: f822ec52be53bd643a39beca2a2eb130, type: 3}
+    - enemyName: Bat
+      enemyCount: 200
+      spawnCount: 0
+      enemyPrefab: {fileID: 3453514435061809102, guid: 82ea2483b83e7f544891b5fc1e10f3be, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.2
+    spawnCount: 0
+  - waveName: Wave 17
+    enemyGroups:
+    - enemyName: Skeleton Seeker
+      enemyCount: 1
+      spawnCount: 0
+      enemyPrefab: {fileID: 8446903803033229654, guid: e9f02b245f18bdb4eaaa6af91649953b, type: 3}
+    - enemyName: Stump
+      enemyCount: 75
+      spawnCount: 0
+      enemyPrefab: {fileID: 1205390268951531452, guid: 7142a739afa9d3545899b73a950ba924, type: 3}
+    - enemyName: Skeleton Warrior
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 1174951708663623431, guid: 65fc1c82a2296fa44a97960bf0a882f0, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.2
+    spawnCount: 0
+  - waveName: Wave 18
+    enemyGroups:
+    - enemyName: Skeleton Seeker
+      enemyCount: 2
+      spawnCount: 0
+      enemyPrefab: {fileID: 8446903803033229654, guid: e9f02b245f18bdb4eaaa6af91649953b, type: 3}
+    - enemyName: Flying Eye
+      enemyCount: 75
+      spawnCount: 0
+      enemyPrefab: {fileID: 1303935746889765635, guid: f72d8b0c8719b2a4497a33b81f021c98, type: 3}
+    - enemyName: Demon
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 7619784974671427562, guid: 78537a91328b8db49953c5f2721ba0ca, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.2
+    spawnCount: 0
+  - waveName: Wave 19
+    enemyGroups:
+    - enemyName: Skeleton Seeker
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefab: {fileID: 8446903803033229654, guid: e9f02b245f18bdb4eaaa6af91649953b, type: 3}
+    - enemyName: Stone Golem
+      enemyCount: 1
+      spawnCount: 0
+      enemyPrefab: {fileID: 2349134093270240024, guid: 4f5bee7b395f8674abbd59643fda7c0d, type: 3}
+    - enemyName: Death Bringer
+      enemyCount: 1
+      spawnCount: 0
+      enemyPrefab: {fileID: 6679005153774227431, guid: 3be871b1d6d6a3d4385f65802a2a0c2a, type: 3}
+    - enemyName: Demon
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 7619784974671427562, guid: 78537a91328b8db49953c5f2721ba0ca, type: 3}
+    - enemyName: Skeleton Warrior
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 1174951708663623431, guid: 65fc1c82a2296fa44a97960bf0a882f0, type: 3}
+    - enemyName: Goblin
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 1806543459694631044, guid: eb3be40b74048294d87ec2fffef34e7e, type: 3}
+    - enemyName: Sprout
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 4162717417100259613, guid: f822ec52be53bd643a39beca2a2eb130, type: 3}
+    - enemyName: Stump
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 1205390268951531452, guid: 7142a739afa9d3545899b73a950ba924, type: 3}
+    - enemyName: Flying Eye
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 1303935746889765635, guid: f72d8b0c8719b2a4497a33b81f021c98, type: 3}
+    - enemyName: Bat
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 3453514435061809102, guid: 82ea2483b83e7f544891b5fc1e10f3be, type: 3}
+    waveQuota: 0
+    spawnInterval: 0.2
+    spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 1000
+  maxEnemiesAllowed: 800
   maxEnemiesReached: 0
   waveInterval: 30
   relativeSpawnPoints:
@@ -5267,7 +5494,7 @@ Transform:
   m_GameObject: {fileID: 925495451}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.58, y: -2.18, z: 0}
+  m_LocalPosition: {x: 11.19, y: -3.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6150,6 +6377,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1143426939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1143426940}
+  m_Layer: 0
+  m_Name: Spawn Point 15
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1143426940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143426939}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.92, y: -6.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 758125877}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1146497452
 GameObject:
   m_ObjectHideFlags: 0
@@ -7125,63 +7383,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267371108}
   m_CullTransparentMesh: 1
---- !u!1001 &1298318364
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 137878648736021112, guid: 60f9752a473992545b3a000c91bfaafc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 137878648736021112, guid: 60f9752a473992545b3a000c91bfaafc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 137878648736021112, guid: 60f9752a473992545b3a000c91bfaafc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 137878648736021112, guid: 60f9752a473992545b3a000c91bfaafc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 137878648736021112, guid: 60f9752a473992545b3a000c91bfaafc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 137878648736021112, guid: 60f9752a473992545b3a000c91bfaafc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 137878648736021112, guid: 60f9752a473992545b3a000c91bfaafc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 137878648736021112, guid: 60f9752a473992545b3a000c91bfaafc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 137878648736021112, guid: 60f9752a473992545b3a000c91bfaafc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 137878648736021112, guid: 60f9752a473992545b3a000c91bfaafc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4350472531677502425, guid: 60f9752a473992545b3a000c91bfaafc, type: 3}
-      propertyPath: m_Name
-      value: Tombstone
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 60f9752a473992545b3a000c91bfaafc, type: 3}
 --- !u!1 &1306632530
 GameObject:
   m_ObjectHideFlags: 0
@@ -7216,8 +7417,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -194, y: 3.6243}
-  m_SizeDelta: {x: 170, y: 300}
+  m_AnchoredPosition: {x: -194, y: -5}
+  m_SizeDelta: {x: 170, y: 340}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1306632532
 CanvasRenderer:
@@ -7737,7 +7938,7 @@ Transform:
   m_GameObject: {fileID: 1354818014}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.89, y: -5.91, z: 0}
+  m_LocalPosition: {x: -5.23, y: -5.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8868,7 +9069,7 @@ Transform:
   m_GameObject: {fileID: 1642404574}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.2, y: -5.52, z: 0}
+  m_LocalPosition: {x: 10.22, y: -6.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8899,7 +9100,7 @@ Transform:
   m_GameObject: {fileID: 1643098691}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.47, y: -1.78, z: 0}
+  m_LocalPosition: {x: -11.17, y: -0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9274,7 +9475,7 @@ Transform:
   m_GameObject: {fileID: 1717698941}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.52, y: 5.16, z: 0}
+  m_LocalPosition: {x: 10.52, y: 5.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9590,7 +9791,7 @@ Transform:
   m_GameObject: {fileID: 1794702747}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.9, y: 5.49, z: 0}
+  m_LocalPosition: {x: 4.48, y: 5.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10809,6 +11010,37 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1963172104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1963172105}
+  m_Layer: 0
+  m_Name: Spawn Point 14
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1963172105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963172104}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.94, y: -2.77, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 758125877}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1979488957
 GameObject:
   m_ObjectHideFlags: 0
@@ -10834,7 +11066,7 @@ Transform:
   m_GameObject: {fileID: 1979488957}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.41, y: 4.36, z: 0}
+  m_LocalPosition: {x: -10.91, y: 5.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10865,7 +11097,7 @@ Transform:
   m_GameObject: {fileID: 1981359281}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.94, y: 5.69, z: 0}
+  m_LocalPosition: {x: -5.08, y: 5.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11601,4 +11833,3 @@ SceneRoots:
   - {fileID: 780348124}
   - {fileID: 135149584}
   - {fileID: 1003407886}
-  - {fileID: 1298318364}
